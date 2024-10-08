@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: express-server
-        image: team3capstoneacr.azurecr.io/express-server:v1
+        image: team3capstoneacr.azurecr.io/express-server:v2
         ports:
         - containerPort: 3000
         volumeMounts:
