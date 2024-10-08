@@ -9,7 +9,7 @@ images:
   newTag: v2
 - name: team3capstoneacr.azurecr.io/flask-api
   newTag: v1
-- name: team3capstoneacr.azurecr.io/sqlite-db
+- name: keinos/sqlite3
   newTag: latest
 - name: team3capstoneacr.azurecr.io/angular-app
   newTag: v2
