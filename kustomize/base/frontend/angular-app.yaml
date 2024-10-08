@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: angular-app
-        image: team3capstoneacr.azurecr.io/angular-app:v1
+        image: team3capstoneacr.azurecr.io/angular-app:v2
         ports:
         - containerPort: 80
       restartPolicy: Always
