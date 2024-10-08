@@ -4,19 +4,16 @@ resources:
 - database/
 - ingress/
 
-configMapGenerator:
-- literals:
-  - ASPNETCORE_ENVIRONMENT=Development
-  name: common-config
-
 images:
-- name: myacr121843.azurecr.io/optum-azure-capstone-express-server
-  newTag: v4
-- name: myacr121843.azurecr.io/optum-azure-capstone-flask-api
-  newTag: v4
-- name: myacr121843.azurecr.io/sqlite-db
-  newTag: v4
-- name: myacr121843.azurecr.io/optum-azure-capstone-angular-app
-  newTag: v4
+- name: team3capstoneacr.azurecr.io/express-server
+  newTag: v1
+- name: team3capstoneacr.azurecr.io/flask-api
+  newTag: v1
+- name: team3capstoneacr.azurecr.io/sqlite-db
+  newTag: latest
+- name: team3capstoneacr.azurecr.io/angular-app
+  newTag: v1
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+
+namespace: default
